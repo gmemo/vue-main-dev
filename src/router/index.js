@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import Edit from '../views/Edit.vue'
+import App from '../App.vue'
 
 Vue.use(VueRouter)
 
@@ -9,14 +8,8 @@ Vue.use(VueRouter)
   {
     path: '/',
     name: 'Home',
-    component: Home
-  },
-  {
-    // url with id param
-    path: '/edit/:id',
-    name: 'Edit',
-    component: Edit
-  },
+    component: App
+  }
 ]
 
 const router = new VueRouter({
